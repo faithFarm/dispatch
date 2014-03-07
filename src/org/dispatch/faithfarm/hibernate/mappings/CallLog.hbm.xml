@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 25, 2013 9:20:15 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.dispatch.faithfarm.domain.CallLog" table="call_log" catalog="ffarm_dev">
+        <id name="callLogId" type="java.lang.Long">
+            <column name="CALL_LOG_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="callType" type="string">
+            <column name="CALL_TYPE" length="45" not-null="true" />
+        </property>
+        <property name="source" type="string">
+            <column name="SOURCE" length="60" not-null="true" />
+        </property>
+        <property name="callDate" type="string">
+            <column name="CALL_DATE" length="45" not-null="true" />
+        </property>
+        <property name="callAgent" type="string">
+            <column name="CALL_AGENT" length="25" not-null="true" />
+        </property>
+        <property name="farmBase" type="string">
+            <column name="FARM_BASE" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

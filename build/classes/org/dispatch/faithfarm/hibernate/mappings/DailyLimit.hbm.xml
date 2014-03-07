@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 24, 2013 9:45:29 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.dispatch.faithfarm.domain.DailyLimit" table="daily_limit" catalog="ffarm_dev">
+        <id name="dailyLimitId" type="java.lang.Long">
+            <column name="DAILY_LIMIT_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="dispatchDate" type="string">
+            <column name="DISPATCH_DATE" length="45" not-null="true" />
+        </property>
+        <property name="dailyLimit" type="int">
+            <column name="DAILY_LIMIT" not-null="true" />
+        </property>
+        <property name="specialLimit" type="int">
+            <column name="SPECIAL_LIMIT" not-null="true" />
+        </property>
+        <property name="updatedBy" type="string">
+            <column name="UPDATED_BY" length="45" not-null="true" />
+        </property>
+        <property name="updatedDate" type="string">
+            <column name="UPDATED_DATE" length="25" not-null="true" />
+        </property>
+        <property name="farmBase" type="string">
+            <column name="FARM_BASE" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

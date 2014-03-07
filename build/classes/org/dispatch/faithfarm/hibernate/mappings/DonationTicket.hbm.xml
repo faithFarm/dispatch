@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 24, 2013 9:59:33 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.dispatch.faithfarm.domain.DonationTicket" table="donation_ticket" catalog="ffarm_dev">
+        <id name="donationId" type="java.lang.Long">
+            <column name="DONATION_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="lastname" type="string">
+            <column name="LASTNAME" length="45" />
+        </property>
+        <property name="firstname" type="string">
+            <column name="FIRSTNAME" length="45" />
+        </property>
+        <property name="suffix" type="string">
+            <column name="SUFFIX" length="45" />
+        </property>
+        <property name="contactPhone" type="string">
+            <column name="CONTACT_PHONE" length="45" />
+        </property>
+        <property name="phoneOther" type="string">
+            <column name="PHONE_OTHER" length="45" />
+        </property>
+        <property name="emailAddress" type="string">
+            <column name="EMAIL_ADDRESS" length="45" />
+        </property>
+        <property name="addressLine1" type="string">
+            <column name="ADDRESS_LINE1" length="45" />
+        </property>
+        <property name="addressLine2" type="string">
+            <column name="ADDRESS_LINE2" length="45" />
+        </property>
+        <property name="city" type="string">
+            <column name="CITY" length="45" />
+        </property>
+        <property name="state" type="string">
+            <column name="STATE" length="45" />
+        </property>
+        <property name="zipcode" type="string">
+            <column name="ZIPCODE" length="45" />
+        </property>
+        <property name="majorIntersection" type="string">
+            <column name="MAJOR_INTERSECTION" length="45" />
+        </property>
+        <property name="subdivision" type="string">
+            <column name="SUBDIVISION" length="45" />
+        </property>
+        <property name="streetSuffix" type="string">
+            <column name="STREET_SUFFIX" length="45" />
+        </property>
+        <property name="structureType" type="string">
+            <column name="STRUCTURE_TYPE" length="45" />
+        </property>
+        <property name="unit" type="string">
+            <column name="UNIT" length="45" />
+        </property>
+        <property name="building" type="string">
+            <column name="BUILDING" length="45" />
+        </property>
+        <property name="floor" type="string">
+            <column name="FLOOR" length="45" />
+        </property>
+        <property name="elevatorFlag" type="string">
+            <column name="ELEVATOR_FLAG" length="45" />
+        </property>
+        <property name="gatedFlag" type="string">
+            <column name="GATED_FLAG" length="45" />
+        </property>
+        <property name="gateInstructions" type="string">
+            <column name="GATE_INSTRUCTIONS" length="45" />
+        </property>
+        <property name="dispatchDate" type="string">
+            <column name="DISPATCH_DATE" length="45" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS" length="45" />
+        </property>
+        <property name="specialFlag" type="string">
+            <column name="SPECIAL_FLAG" length="45" />
+        </property>
+        <property name="callRequirements" type="string">
+            <column name="CALL_REQUIREMENTS" length="45" />
+        </property>
+        <property name="ac" type="string">
+            <column name="AC" length="45" />
+        </property>
+        <property name="bedding" type="string">
+            <column name="BEDDING" length="45" />
+        </property>
+        <property name="beddingQtyType" type="string">
+            <column name="BEDDING_QTY_TYPE" length="45" />
+        </property>
+        <property name="books" type="string">
+            <column name="BOOKS" length="45" />
+        </property>
+        <property name="booksQtyType" type="string">
+            <column name="BOOKS_QTY_TYPE" length="45" />
+        </property>
+        <property name="clothing" type="string">
+            <column name="CLOTHING" length="45" />
+        </property>
+        <property name="clothingQtyType" type="string">
+            <column name="CLOTHING_QTY_TYPE" length="45" />
+        </property>
+        <property name="computer" type="string">
+            <column name="COMPUTER" length="45" />
+        </property>
+        <property name="desk" type="string">
+            <column name="DESK" length="45" />
+        </property>
+        <property name="chest" type="string">
+            <column name="CHEST" length="45" />
+        </property>
+        <property name="armoire" type="string">
+            <column name="ARMOIRE" length="45" />
+        </property>
+        <property name="dresser" type="string">
+            <column name="DRESSER" length="45" />
+        </property>
+        <property name="mirror" type="string">
+            <column name="MIRROR" length="45" />
+        </property>
+        <property name="nightstand" type="string">
+            <column name="NIGHTSTAND" length="45" />
+        </property>
+        <property name="headboard" type="string">
+            <column name="HEADBOARD" length="45" />
+        </property>
+        <property name="footboard" type="string">
+            <column name="FOOTBOARD" length="45" />
+        </property>
+        <property name="rails" type="string">
+            <column name="RAILS" length="45" />
+        </property>
+        <property name="lamp" type="string">
+            <column name="LAMP" length="45" />
+        </property>
+        <property name="lawnFurniture" type="string">
+            <column name="LAWN_FURNITURE" length="45" />
+        </property>
+        <property name="mattress" type="string">
+            <column name="MATTRESS" length="45" />
+        </property>
+        <property name="mattressQtySize" type="string">
+            <column name="MATTRESS_QTY_SIZE" length="45" />
+        </property>
+        <property name="miscHouseholdItems" type="string">
+            <column name="MISC_HOUSEHOLD_ITEMS" length="45" />
+        </property>
+        <property name="refridgerator" type="string">
+            <column name="REFRIDGERATOR" length="45" />
+        </property>
+        <property name="stove" type="string">
+            <column name="STOVE" length="45" />
+        </property>
+        <property name="recliner" type="string">
+            <column name="RECLINER" length="45" />
+        </property>
+        <property name="sofa" type="string">
+            <column name="SOFA" length="45" />
+        </property>
+        <property name="loveseat" type="string">
+            <column name="LOVESEAT" length="45" />
+        </property>
+        <property name="wallUnit" type="string">
+            <column name="WALL_UNIT" length="45" />
+        </property>
+        <property name="tables" type="string">
+            <column name="TABLES" length="45" />
+        </property>
+        <property name="chair" type="string">
+            <column name="CHAIR" length="45" />
+        </property>
+        <property name="television" type="string">
+            <column name="TELEVISION" length="45" />
+        </property>
+        <property name="televisionSize" type="string">
+            <column name="TELEVISION_SIZE" length="45" />
+        </property>
+        <property name="electronics" type="string">
+            <column name="ELECTRONICS" length="45" />
+        </property>
+        <property name="washer" type="string">
+            <column name="WASHER" length="45" />
+        </property>
+        <property name="dryer" type="string">
+            <column name="DRYER" length="45" />
+        </property>
+        <property name="exerciseEquipment" type="string">
+            <column name="EXERCISE_EQUIPMENT" length="45" />
+        </property>
+        <property name="specialNotes" type="string">
+            <column name="SPECIAL_NOTES" length="16277215" />
+        </property>
+        <property name="creationDate" type="string">
+            <column name="CREATION_DATE" length="45" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="CREATED_BY" length="45" />
+        </property>
+        <property name="lastUpdatedDate" type="string">
+            <column name="LAST_UPDATED_DATE" length="45" />
+        </property>
+        <property name="updatedBy" type="string">
+            <column name="UPDATED_BY" length="45" />
+        </property>
+        <property name="farmBase" type="string">
+            <column name="FARM_BASE" length="45" not-null="true" />
+        </property>
+        <property name="tableType" type="string">
+            <column name="TABLE_TYPE" length="45" />
+        </property>
+        <property name="chairType" type="string">
+            <column name="CHAIR_TYPE" length="45" />
+        </property>
+        <property name="location" type="string">
+            <column name="LOCATION" length="45" />
+        </property>
+        <property name="bookcase" type="string">
+            <column name="BOOKCASE" length="45" />
+        </property>
+        <property name="ottoman" type="string">
+            <column name="OTTOMAN" length="45" />
+        </property>
+        <property name="miscHouseholdItemQtySize" type="string">
+            <column name="MISC_HOUSEHOLD_ITEM_QTY_SIZE" length="45" />
+        </property>
+        <property name="wallUnitQtySize" type="string">
+            <column name="WALL_UNIT_QTY_SIZE" length="45" />
+        </property>
+        <property name="gateCode" type="string">
+            <column name="GATE_CODE" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

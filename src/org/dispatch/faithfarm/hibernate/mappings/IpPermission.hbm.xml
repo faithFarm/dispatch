@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 16, 2013 10:14:00 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.dispatch.faithfarm.domain.IpPermission" table="ip_permission" catalog="ffarm_dev">
+        <id name="ipId" type="java.lang.Long">
+            <column name="ip_id" />
+            <generator class="identity" />
+        </id>
+        <property name="ipAddress" type="string">
+            <column name="ip_address" length="20" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="200" />
+        </property>       
+    </class>
+</hibernate-mapping>
