@@ -34,14 +34,19 @@ public class AuthenticationFilter implements Filter {
 		String contextPath = request.getContextPath();
 		String ip=request.getRemoteAddr().toString();
 		
-		GenericDao dao = new GenericDao();
 		boolean access=false;
-		List<IpPermission> list = dao.listAll(new IpPermission().getClass());
-		for (int i=0;i<list.size();i++) {
-			IpPermission obj = (IpPermission)list.get(i);
-			if (obj.getIpAddress().equals(ip)) 
-				access=true;
-				
+		
+		if ("0:0:0:0:0:0:0:1".equals(ip))
+			access=true;
+		else {
+			GenericDao dao = new GenericDao();
+			List<IpPermission> list = dao.listAll(new IpPermission().getClass());
+			for (int i=0;i<list.size();i++) {
+				IpPermission obj = (IpPermission)list.get(i);
+				if (obj.getIpAddress().equals(ip)) 
+					access=true;
+					
+			}
 		}
 		/*
 		if (!"174.141.99.194".equals(ip)&&!"75.147.217.62".equals(ip) && //Boynton Beach Farm
