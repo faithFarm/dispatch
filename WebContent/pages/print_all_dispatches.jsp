@@ -119,7 +119,7 @@
 					<bean:write name="list" property="city" />,&nbsp;<bean:write name="list" property="state" />&nbsp;<bean:write name="list" property="zipcode" />
 					<br/><br/>
 					<b>Contact Phone:</b>&nbsp;<bean:write name="list" property="contactPhone" /><br/>
-					<b>Alt. Phone:</b>&nbsp;<bean:write name="ticketForm" property="ticket.phoneOther" /><br/>
+					<b>Alt. Phone:</b>&nbsp;<bean:write name="list" property="phoneOther" /><br/>
 					<b>Email:</b>&nbsp;<bean:write name="list" property="emailAddress" /><br/>
 					<br/><br/>
 					
