@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated Sep 16, 2013 10:14:00 AM by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="org.dispatch.faithfarm.domain.SystemUser" table="system_user" catalog="ffarm_dev">
+    <class name="org.dispatch.faithfarm.domain.SystemUser" table="system_user" catalog="ffarm_prod">
         <id name="userId" type="java.lang.Long">
             <column name="USER_ID" />
             <generator class="identity" />

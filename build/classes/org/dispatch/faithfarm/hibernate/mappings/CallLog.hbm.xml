@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated Oct 25, 2013 9:20:15 AM by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="org.dispatch.faithfarm.domain.CallLog" table="call_log" catalog="ffarm_dev">
+    <class name="org.dispatch.faithfarm.domain.CallLog" table="call_log" catalog="ffarm_prod">
         <id name="callLogId" type="java.lang.Long">
             <column name="CALL_LOG_ID" />
             <generator class="identity" />

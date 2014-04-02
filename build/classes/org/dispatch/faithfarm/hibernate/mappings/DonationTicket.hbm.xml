@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated Oct 24, 2013 9:59:33 AM by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="org.dispatch.faithfarm.domain.DonationTicket" table="donation_ticket" catalog="ffarm_dev">
+    <class name="org.dispatch.faithfarm.domain.DonationTicket" table="donation_ticket" catalog="ffarm_prod">
         <id name="donationId" type="java.lang.Long">
             <column name="DONATION_ID" />
             <generator class="identity" />

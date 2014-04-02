@@ -3,7 +3,7 @@
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <!-- Generated Oct 24, 2013 9:45:29 AM by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping>
-    <class name="org.dispatch.faithfarm.domain.DailyLimit" table="daily_limit" catalog="ffarm_dev">
+    <class name="org.dispatch.faithfarm.domain.DailyLimit" table="daily_limit" catalog="ffarm_prod">
         <id name="dailyLimitId" type="java.lang.Long">
             <column name="DAILY_LIMIT_ID" />
             <generator class="identity" />
